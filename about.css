@@ -1,0 +1,82 @@
+* {
+    background-color: #191919;
+    font-family: 'Poppins', sans-serif;
+} 
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+#menu {
+    padding: 5px 10px;
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+
+.menu-item {
+    font-size: 20px;
+    color: #FF4545;
+    margin: 0px 5px;
+    text-decoration: none; 
+}
+
+.menu-item:hover {
+    text-decoration: underline;
+}
+
+.centered {
+    /* margin: 50px auto 20px auto;  */
+    padding: 20px;
+    color: #ffffff;
+}
+
+
+.header {
+    text-align: right; /* Aligns the header text to the right */
+    margin-right: 13%; /* Adjust the right margin to move it to the right */
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    color: #841515;
+    display: block;
+}
+
+.paragraph {
+    text-align: justify; /* Aligns the paragraph text justified */
+    width: 35%;
+    padding-left: 53%;
+    margin-top: -520px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.third_para {
+    text-align: justify; /* Aligns the paragraph text justified */
+    width: 35%;
+    padding-left: 53%;
+    margin-top: 60px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.second_para {
+    text-align: justify; /* Aligns the paragraph text justified */
+    width: 35%;
+    padding-left: 53%;
+    margin-top: 40px;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.image {
+    width: 450px; /* Set a specific width for the image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures the image is treated as a block element */
+    margin: -70px 0px 0px 200px; /* Adjust the margin to center the image horizontally */
+    position: relative; /* Allows for further positioning adjustments */
+}
+    
