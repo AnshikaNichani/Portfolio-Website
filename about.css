@@ -51,25 +51,7 @@
     margin-top: -520px;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
-}
-
-.third_para {
-    text-align: justify; /* Aligns the paragraph text justified */
-    width: 35%;
-    padding-left: 53%;
-    margin-top: 60px;
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
-}
-
-
-.second_para {
-    text-align: justify; /* Aligns the paragraph text justified */
-    width: 35%;
-    padding-left: 53%;
-    margin-top: 40px;
-    font-size: 25px;
-    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
 }
 
 .image {
@@ -78,5 +60,45 @@
     display: block; /* Ensures the image is treated as a block element */
     margin: -70px 0px 0px 200px; /* Adjust the margin to center the image horizontally */
     position: relative; /* Allows for further positioning adjustments */
+    border-radius: 10px;
 }
+
+
+.rectangle {
+    width: 100%; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
+    background-color: #FF4545; /* Rectangle background color */
+    color: white; /* Text color */
+    /* line-height: 150px; Centers text vertically */
+    margin-top: 150px;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 80px;
+    color: white;
+}
+
+.rectangle h1 {
+    font-size: 24px; /* Space between header and paragraph */
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 20px 100px;
+    background-color: #FF4545;
+    width: 80%;
+}
+
+.rectangle p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    padding: 20px 100px;
+    background-color: #FF4545;
+    width: 80%;
+
+}
+*:focus {
+    outline: none;
+}
+
+
+
     
