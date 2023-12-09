@@ -6,13 +6,174 @@
   </head>
   <body>
 
+    <div>
+      <h1 id="an"> an. </h1>
+    </div>
+    <div id="menu">
+      <a class="menu-item" href="index.html">home</a>
+      <a class="menu-item" href="about.html">about</a>
+      <a class="menu-item" href="Resume.pdf">resume</a>
+      <a class="menu-item" href="contact.html">photography</a>
+    </div>
+
+
+    <div class="title">
+      <h2>singapore, singapore</h2>
+  </div>
+
     <div class="gallery">
+      <span class="arrow left"></span>
       <div class="gallery-container">
-        <img src="photo1.jpg" alt="Image 1">
-        <img src="photo2.jpg" alt="Image 2">
+        <img src="sing/002981310010.jpg" alt="Image 1">
+        <img src="sing/002981310009.jpg" alt="Image 2"> 
+        <img src="sing/002981310020.jpg" alt="Image 3"> 
+        <img src="sing/002981310028.JPG" alt="Image 4"> 
+        <img src="sing/002981310029.jpg" alt="Image 5"> 
+        <img src="sing/002981310034.jpg" alt="Image 6"> 
+        <img src="sing/002981310035.jpg" alt="Image 7"> 
+        <img src="sing/002981310036.jpg" alt="Image 8"> 
+        <img src="sing/002981310038.jpg" alt="Image 9"> 
+        <img src="sing/003018670003.jpg" alt="Image 10">   
         <!-- Add more images here -->
       </div>
+      <span class="arrow right"></span>
     </div>
+
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    const gallery = document.querySelector('.gallery');
+    const leftArrow = document.querySelector('.arrow.left');
+    const rightArrow = document.querySelector('.arrow.right');
+
+    // Scroll the gallery to the left
+    leftArrow.addEventListener('click', function() {
+        gallery.scrollTo({
+            left: gallery.scrollLeft - 200, // Adjust scrolling amount as needed
+            behavior: 'smooth' // Add smooth scrolling behavior
+        });
+    });
+
+    // Scroll the gallery to the right
+    rightArrow.addEventListener('click', function() {
+        gallery.scrollTo({
+            left: gallery.scrollLeft + 200, // Adjust scrolling amount as needed
+            behavior: 'smooth' // Add smooth scrolling behavior
+        });
+    });
+});
+    </script>
+    
+
+    <div class="title2">
+      <h2>toronto, canada</h2>
+  </div>
+
+    <div class="gallery2">
+      <button class="scroll-btn left">&lt;</button>
+      <div class="gallery-container2">
+        <img src="toro/006503090018.JPG" alt="Image 1">
+        <img src="toro/006503090020.JPG" alt="Image 2"> 
+        <img src="toro/006503090021.JPG" alt="Image 3"> 
+        <img src="toro/006503090022.JPG" alt="Image 4"> 
+        <img src="toro/006503090025.JPG" alt="Image 5"> 
+        <img src="toro/006503090027.JPG" alt="Image 6"> 
+        <img src="toro/006503090029.JPG" alt="Image 7"> 
+        <img src="toro/006614660001.JPG" alt="Image 8"> 
+        <img src="toro/006614660030.jpg" alt="Image 9">  
+        <!-- Add more images here -->
+      </div>
+      <button class="scroll-btn right">&gt;</button>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    const gallery = document.querySelector('.gallery2');
+    const leftArrow = document.querySelector('.scroll-btn.left');
+    const rightArrow = document.querySelector('.scroll-btn.right');
+
+    // Scroll the gallery to the left
+    leftArrow.addEventListener('click', function() {
+        gallery.scrollTo({
+            left: gallery.scrollLeft - 200, // Adjust scrolling amount as needed
+            behavior: 'smooth' // Add smooth scrolling behavior
+        });
+    });
+
+    // Scroll the gallery to the right
+    rightArrow.addEventListener('click', function() {
+        gallery.scrollTo({
+            left: gallery.scrollLeft + 200, // Adjust scrolling amount as needed
+            behavior: 'smooth' // Add smooth scrolling behavior
+        });
+    });
+});
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="title3">
+      <h2>denver, colorado</h2>
+    </div>
+
+    <div class="gallery3">
+      <button class="swipe left">&lt;</button>
+      <div class="gallery-container3">
+        <img src="col/007242490008 2.JPG" alt="Image 1">
+        <img src="col/007242490010 2.JPG" alt="Image 2"> 
+        <img src="col/007242490020 3.JPG" alt="Image 3"> 
+        <img src="col/007242490027 3.JPG" alt="Image 4"> 
+        <img src="col/007242490028 2.jpg" alt="Image 5"> 
+        <img src="col/007242490031 2.JPG" alt="Image 6"> 
+        <img src="col/007242510017 2.jpg" alt="Image 7"> 
+        <img src="col/007242510021 2.jpg" alt="Image 8"> 
+        <img src="col/007242510032 2.jpg" alt="Image 9"> 
+        <!-- Add more images here -->
+      </div>
+      <button class="swipe right">&gt;</button>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    const gallery = document.querySelector('.gallery3');
+    const leftArrow = document.querySelector('.swipe.left');
+    const rightArrow = document.querySelector('.swipe.right');
+
+    // Scroll the gallery to the left
+    leftArrow.addEventListener('click', function() {
+        gallery.scrollTo({
+            left: gallery.scrollLeft - 200, // Adjust scrolling amount as needed
+            behavior: 'smooth' // Add smooth scrolling behavior
+        });
+    });
+
+    // Scroll the gallery to the right
+    rightArrow.addEventListener('click', function() {
+        gallery.scrollTo({
+            left: gallery.scrollLeft + 200, // Adjust scrolling amount as needed
+            behavior: 'smooth' // Add smooth scrolling behavior
+        });
+    });
+});
+    // Event listener for scroll
+  window.addEventListener('scroll', handleScroll);
+
+    </script>
+
 
 
 
@@ -52,63 +213,3 @@
 
 
 
-<!--
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="photos.css">
-</head>
-<body>
-  <div id="gridpics">
-    <img class="photogrid" src="images/002981310009.jpg" alt="photoGrid">
-    <img src="images/002981310010.jpg" alt="photoGrid">
-    <img src="images/002981310035.jpg" alt="photoGrid">
-    <img src="images/002991410016.jpg" alt="photoGrid">
-    <img src="images/002991420013.jpg" alt="photoGrid">
-    <img src="images/002991420016.jpg" alt="photoGrid">
-    <img src="images/003018670013.jpg" alt="photoGrid">
-    <img src="images/003018670031.jpg" alt="photoGrid">
-    <img src="images/003018670035.jpg" alt="photoGrid">
-    <img class="photogrid" src="images/006503090019.JPG" alt="photoGrid">
-    <img src="images/006503090020.JPG" alt="photoGrid">
-    <img src="images/006503090022.JPG" alt="photoGrid">
-    <img src="images/006503090029.JPG" alt="photoGrid">
-    <img src="images/006614660001.JPG" alt="photoGrid">
-    <img src="images/006614670015.JPG" alt="photoGrid">
-    <img src="images/A7AF5CB8-1E0C-4591-8919-5A855693DD4F.jpg" alt="photoGrid">
-    <img src="images/DSC_0625.JPG" alt="photoGrid">
-    <img src="images/DSC_0639.jpg" alt="photoGrid">
-    <img src="images/DSC_0662.JPG" alt="photoGrid">
-    <img src="images/IMG_3976.JPG" alt="photoGrid">
-  </div>
-</body>
-</html>
-
--->
-
-
-
-
-
-
-
-
-
-
-
-<!--
-  <nav id="desktop-nav">
-    <div class="logo"> Anshika Nichani </div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div class="container">
-      <p class="centered-para"> hello, my name is anshika nichani. i am a designer, developer, and photographer.</p>
-    </div>
-  </nav>
-  -->

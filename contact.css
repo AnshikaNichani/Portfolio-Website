@@ -1,22 +1,294 @@
+* {
+  background-color: #191919;
+} 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.an {
+  color: #FF4545; 
+}
+
+#menu {
+  padding: 5px 10px;
+  position: absolute;
+  right: 0;
+  top: 30px;
+}
+
+.menu-item {
+  font-size: 20px;
+  color: #FF4545;
+  margin: 0px 5px;
+  text-decoration: none; 
+}
+
+.menu-item:hover {
+  text-decoration: underline;
+}
+
+
+
+
+.gallery-container {
+  width: 20%; /* Adjust width as needed */
+  margin-right: 0; /* Reset right margin */
+  margin-top: 5px;
+}
+
 .gallery {
-    width: 100%;
-    overflow-x: auto;
-    white-space: nowrap; /* Ensure images stay in a single line */
-  }
-  
-  .gallery-container {
-    display: inline-block;
-  }
-  
-  .gallery img {
-    max-width: 100%;
-    height: auto;
-    /* You can set more styles for images here */
-  }
-  
+  width: 80%; /* Set the width of the gallery */
+  margin: 0 auto; /* Center the gallery within its container */
+  overflow-x: auto;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+.gallery img {
+  max-width: 100%; /* Adjust image width */
+  height: auto;
+  display: inline-block;
+  vertical-align: top; /* Align images to the top */
+  margin-top: 0; /* Reset top margin */
+  margin-right: 20px;
+}
+
+.title {
+  text-align: left; /* Center the title horizontally */
+  color: white;
+  font-size: 15px;
+  padding-top: 40px;
+  margin-left: 150px;
+}
+
+.arrow {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  background: none; 
+}
+
+.arrow.left::before,
+.arrow.right::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  width: 25px;
+  height: 25px;
+}
+
+.arrow.left::before {
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.arrow.right::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.arrow.left {
+  left: 80px;
+}
+
+.arrow.right {
+  right: 80px;
+}
+
+.arrow:hover::before {
+  border-color: #FF4545; /* Change to the color you want on hover */
+}
 
 
 
+
+.gallery-container2 {
+  width: 20%; /* Adjust width as needed */
+  margin-right: 0; /* Reset right margin */
+  margin-top: 5px;
+}
+
+.gallery2 {
+  width: 80%; /* Set the width of the gallery */
+  margin: 0 auto; /* Center the gallery within its container */
+  overflow-x: auto;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+.gallery2 img {
+  max-width: 100%; /* Adjust image width */
+  height: auto;
+  display: inline-block;
+  vertical-align: top; /* Align images to the top */
+  margin-top: 0; /* Reset top margin */
+  margin-right: 20px;
+}
+
+.title2 {
+  text-align: left; /* Center the title horizontally */
+  color: white;
+  font-size: 15px;
+  padding-top: 40px;
+  margin-left: 150px;
+}
+
+
+.scroll-btn {
+  position: absolute;
+  top: 80%;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  background: none;
+  outline: none; /* Remove the outline */
+  box-shadow: none;
+  border: none;
+}
+
+.scroll-btn.left::before,
+.scroll-btn.right::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid;
+  border-width: 0 5px 5px 0;
+  color: white;
+  width: 25px;
+  height: 25px;
+  outline: none;
+}
+
+.scroll-btn.left::before {
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.scroll-btn.right::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+.scroll-btn.left {
+  left: 80px;
+}
+
+.scroll-btn.right {
+  right: 80px;
+}
+
+.scroll-btn:hover::before {
+  border-color: #FF4545; /* Change to the color you want on hover */
+}
+
+
+.gallery-container3 {
+  width: 20%; /* Adjust width as needed */
+  margin-right: 0; /* Reset right margin */
+  margin-top: 5px;
+}
+
+.gallery3 {
+  width: 80%; /* Set the width of the gallery */
+  margin: 0 auto; /* Center the gallery within its container */
+  overflow-x: auto;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+.gallery3 img {
+  max-width: 100%; /* Adjust image width */
+  height: auto;
+  display: inline-block;
+  vertical-align: top; /* Align images to the top */
+  margin-top: 0; /* Reset top margin */
+  margin-right: 20px;
+}
+
+.title3 {
+  text-align: left; /* Center the title horizontally */
+  color: white;
+  font-size: 15px;
+  padding-top: 40px;
+  margin-left: 150px;
+}
+
+
+.swipe {
+  position: absolute;
+  top: 140%;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  background: none;
+  outline: none; /* Remove the outline */
+  box-shadow: none;
+  border: none;
+}
+
+.swipe.left::before,
+.swipe.right::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid;
+  border-width: 0 5px 5px 0;
+  color: white;
+  width: 25px;
+  height: 25px;
+  outline: none;
+}
+
+.swipe.left::before {
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.swipe.right::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+.swipe.left {
+  left: 80px;
+}
+
+.swipe.right {
+  right: 80px;
+}
+
+.swipe:hover::before {
+  border-color: #FF4545; /* Change to the color you want on hover */
+}
+
+#main-footer {
+  display: none;
+  /* Your footer styles */
+  /* Ensure it's fixed at the bottom of the page */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #FF4545;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  transition: opacity 0.3s ease; /* Add transition effect for smooth display */
+}
 
 
 

@@ -135,6 +135,25 @@
     color: white; /* Change the color of the title */
   }
 
+  #main-footer {
+    display: none;
+    /* Your footer styles */
+    /* Ensure it's fixed at the bottom of the page */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #FF4545;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    transition: opacity 0.3s ease; /* Add transition effect for smooth display */
+}
+
+
+
+
 
   
 

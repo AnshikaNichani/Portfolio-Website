@@ -8,13 +8,13 @@
 </head>
 <body>
   <div>
-    <h1> an. </h1>
+    <h1 id="an"> an. </h1>
   </div>
   <div id="menu">
     <a class="menu-item" href="index.html">home</a>
     <a class="menu-item" href="about.html">about</a>
     <a class="menu-item" href="Resume.pdf">resume</a>
-    <a class="menu-item" href="contact.html">contact</a>
+    <a class="menu-item" href="contact.html">photography</a>
   </div>
 
   <h3 id="title">
@@ -51,6 +51,25 @@
 
   // Event listener for scroll
   window.addEventListener('scroll', handleScroll);
+
+  document.addEventListener("DOMContentLoaded", function() {
+    window.addEventListener("scroll", function() {
+        const footer = document.getElementById("main-footer");
+        const scrollPosition = window.innerHeight + window.scrollY;
+        const documentHeight = document.body.offsetHeight;
+
+        // Adjust the threshold as needed
+        if (scrollPosition >= documentHeight - 100) {
+            footer.style.display = "block";
+            footer.style.opacity = 1;
+        } else {
+            footer.style.opacity = 0;
+            setTimeout(() => {
+                footer.style.display = "none";
+            }, 300); // Adjust the delay to match the transition duration
+        }
+    });
+});
 </script>
 
 
@@ -97,6 +116,19 @@
       <a href="rebrand.pdf" class="view-button4">View</a>
   </div>
 </div>
+
+<footer id="main-footer">
+  <div class="footer-content">
+      <div class="left-content">
+          thanks for stopping by!
+      </div>
+      <div class="right-content">
+          <a href="https://github.com/yourusername">github</a>
+          <a href="mailto:youremail@example.com">email</a>
+          <a href="https://www.linkedin.com/in/yourprofile">linkedin</a>
+      </div>
+  </div>
+</footer>
 
 
 
