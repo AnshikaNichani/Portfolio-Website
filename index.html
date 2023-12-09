@@ -13,15 +13,92 @@
   <div id="menu">
     <a class="menu-item" href="index.html">home</a>
     <a class="menu-item" href="about.html">about</a>
-    <a class="menu-item" href="images/Anshika Nichani-Resume.docx (4).pdf">resume</a>
+    <a class="menu-item" href="Resume.pdf">resume</a>
     <a class="menu-item" href="contact.html">contact</a>
   </div>
 
-  <div class="centered">
-    <p>hi! i'm anshika and i am a developer, designer, and photographer. 
-      i am studying computational media at the georgia institute of technology. 
-    </p>
+  <h3 id="title">
+    <span class="first-line">hi! -</span>
+    <span class="second-line">i'm anshika</span>
+    <p class="additional-info">
+      UX design student @ Georgia Tech | Passionate about improving lives through thoughtful design
+  </p>
+</h3>
+
+<div class="scroll-message" id="scrollMessage">
+  <p>scroll for projects</p>
+  <div class="arrow"></div>
+</div>
+
+<div class="projects-text" id="projectsText">
+  <p><u>projects</u></p>
+</div>
+
+<script>
+  // Get the scroll message element and projects text element
+  const scrollMessage = document.getElementById('scrollMessage');
+  const projectsText = document.getElementById('projectsText');
+
+  // Function to handle the scroll event
+  function handleScroll() {
+      const projectsTextPosition = projectsText.getBoundingClientRect().bottom; // Get position relative to viewport
+
+      if (projectsTextPosition <= window.innerHeight) {
+          scrollMessage.style.display = 'none'; // Hide scroll message when scrolled past projects text
+          window.removeEventListener('scroll', handleScroll); // Remove the scroll event listener
+      }
+  }
+
+  // Event listener for scroll
+  window.addEventListener('scroll', handleScroll);
+</script>
+
+
+<div class="content">
+  <div class="image-container">
+      <img src="esc_room.jpeg" alt="Your Image Description">
   </div>
+  <div class="text-content">
+      <h2>Escape Room Game</h2>
+      <p>In the fall of 2023, some classmates and I created an escape room game with JavaScript, HTML, CSS, and Aframe. The objective of the game is to solve all the clues given so that you can exit the room.</p>
+      <a href="https://rethika6.github.io/Escape-Room/" class="view-button">View</a>
+  </div>
+</div>
+
+<div class="content2">
+  <div class="image-container2">
+      <img src="aframe.png" alt="Your Image Description">
+  </div>
+  <div class="text-content2">
+      <h2>Creating a 3D Scene</h2>
+      <p>In the fall of 2023, some classmates and I created a 3D scene using A-frame and HTML.</p>
+      <a href="https://github.com/arjund1/lmc2700-aframe" class="view-button2">View</a>
+  </div>
+</div>
+
+<div class="content3">
+  <div class="image-container3">
+      <img src="usaa.jpeg" alt="Your Image Description">
+  </div>
+  <div class="text-content3">
+      <h2>USAA Investment App</h2>
+      <p>As a part of a UI/UX Design bootcamp, I created a USAA Investment App highlighting the educational aspect of investment. Through this case study, I gained proficiency in Figma, UX Research, Wireframing, Ideation, and Prototyping.</p>
+      <a href="https://www.figma.com/proto/cdfNTkKaIULmME9jPuqBna/Grace-and-Anshika?type=design&node-id=2412-4461&t=gmhqBGn1CopMisRZ-0&scaling=scale-down&page-id=1%3A2&starting-point-node-id=2412%3A4461&show-proto-sidebar=1" class="view-button3">View</a>
+  </div>
+</div>
+
+<div class="content4">
+  <div class="image-container4">
+      <img src="georgiatech.png " alt="Your Image Description">
+  </div>
+  <div class="text-content4">
+      <h2>Georgia Tech Rebrand</h2>
+      <p>As a rebrand case study, I modernized the Georgia Tech brand by creating a style guide, logo, redesigning the website, and creating other design artifacts.</p>
+      <a href="rebrand.pdf" class="view-button4">View</a>
+  </div>
+</div>
+
+
 
 
   

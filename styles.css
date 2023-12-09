@@ -39,3 +39,268 @@ body {
     
 }
 
+#title { 
+    font-size: 125px;
+    margin-top: 250px;
+    color: #FF4545;
+
+}
+
+.first-line {
+    margin-left: 200px; /* Adjust this value to move both lines to the right */
+}
+
+.second-line {
+    display: block; 
+    text-align: left;
+    margin-left: 200px;
+  }
+
+  .additional-info {
+    font-size: 18px;
+    color: white;
+    margin-left: 200px;
+}
+
+.scroll-message {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    background-color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.scroll-message p {
+    margin: 0;
+    font-size: 14px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: #f9f9f9 transparent transparent transparent;
+    position: absolute;
+    bottom: -20px;
+    right: 10px;
+}
+
+.projects-text {
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    position: relative; /* Ensures positioning relative to the parent element */
+    top: 200px;
+}
+
+
+
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+    margin-left: 300px;
+    width: 45%;
+}
+
+.image-container img {
+    width: 300px;
+    height: 300px;
+    /* You can adjust the margins or use padding to create space */
+    margin-right: 40px; /* Space between the image and text */
+}
+
+.text-content {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: -120px;
+}
+
+.text-content p {
+    font-size: 16px;
+    color: white;
+    width: 200%;
+    line-height: 2;
+}
+
+.view-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px; /* Creates a pill shape */
+    text-decoration: none;
+    color: white;
+    background-color: #333; /* Initial background color */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.view-button:hover {
+    background-color: black; /* Change background color on hover */
+}
+
+
+
+.content2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 300px;
+    width: 45%;
+}
+
+.image-container2 img {
+    width: 300px;
+    height: 300px;
+    /* You can adjust the margins or use padding to create space */
+    margin-right: 40px; /* Space between the image and text */
+}
+
+.text-content2 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-content2 h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: -120px;
+}
+
+.text-content2 p {
+    font-size: 16px;
+    color: white;
+    width: 200%;
+    line-height: 2;
+}
+
+.view-button2 {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px; /* Creates a pill shape */
+    text-decoration: none;
+    color: white;
+    background-color: #333; /* Initial background color */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.view-button2:hover {
+    background-color: black; /* Change background color on hover */
+}
+
+
+.content3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 300px;
+    width: 45%;
+}
+
+.image-container3 img {
+    width: 300px;
+    height: 300px;
+    /* You can adjust the margins or use padding to create space */
+    margin-right: 40px; /* Space between the image and text */
+}
+
+.text-content3 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-content3 h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: -120px;
+}
+
+.text-content3 p {
+    font-size: 16px;
+    color: white;
+    width: 200%;
+    line-height: 2;
+}
+
+.view-button3 {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px; /* Creates a pill shape */
+    text-decoration: none;
+    color: white;
+    background-color: #333; /* Initial background color */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.view-button3:hover {
+    background-color: black; /* Change background color on hover */
+}
+
+.content4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 300px;
+    width: 45%;
+}
+
+.image-container4 img {
+    width: 300px;
+    height: 300px;
+    /* You can adjust the margins or use padding to create space */
+    margin-right: 40px; /* Space between the image and text */
+}
+
+.text-content4 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-content4 h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: -120px;
+}
+
+.text-content4 p {
+    font-size: 16px;
+    color: white;
+    width: 200%;
+    line-height: 2;
+}
+
+.view-button4 {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px; /* Creates a pill shape */
+    text-decoration: none;
+    color: white;
+    background-color: #333; /* Initial background color */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.view-button4:hover {
+    background-color: black; /* Change background color on hover */
+}
+
+
+
+
+
+
+
+

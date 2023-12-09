@@ -100,5 +100,43 @@
 }
 
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Change the number of columns here */
+    grid-gap: 100px; /* Adjust the gap between grid items */
+    margin-top: 130px; /* Adjust the margin as needed */
+    width: 50%;
+    margin-left: 300px;
+  }
+  
+  .grid-item {
+    overflow: hidden; /* Hide any overflow from the images */
+    width: 250px; /* Set a specific width for grid items */
+    height: 250px; /* Set a specific height for grid items */
+
+  }
+  
+  .grid-item img {
+    width: 100%; /* Ensure images take up full width of grid item */
+    height: 100%; /* Maintain aspect ratio */
+    display: block; /* Ensure proper block display */
+  }
+
+  .title {
+    text-align: center; /* Center-align the title */
+    margin-bottom: 20px; /* Add margin below the title */
+    color: white;
+  }
+  
+  .title h2 {
+    margin-top: 130px;
+    margin-left: 100px;
+    font-size: 30px; /* Adjust the font size of the title */
+    color: white; /* Change the color of the title */
+  }
+
+
+  
+
 
     
