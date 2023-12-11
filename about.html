@@ -7,32 +7,38 @@
   <link rel="stylesheet" href="about.css">
 </head>
 <body>
-  <div>
-    <h1> an. </h1>
-  </div>
+  <h1 id="an">
+    <a href="index.html" class="first-part">an</a>.
+</h1>
   <div id="menu">
     <a class="menu-item" href="index.html">home</a>
     <a class="menu-item" href="about.html">about</a>
-    <a class="menu-item" href="images/Anshika Nichani-Resume.docx (4).pdf">resume</a>
+    <a class="menu-item" href="resume.html">resume</a>
     <a class="menu-item" href="contact.html">photography</a>
   </div>
 
 
   <div class="centered">
     <h1 class="header">nice to meet you!</h1>
-    <img src="photo6.JPG" alt="Description of the image" class="image">
-    <p class="paragraph">I am a second year at Georgia Tech studying Computational Media, an interdisplinary program that combines computer science and interaction design.
-        Through my time at Georgia Tech, I have learned how technology is able to affect the human condition. I have gained technical expertise from my computer science classes as well as creative skills from my design classes. 
-        My courses such as Object-Oriented Programming, Object and Design and, Visual Design have adqueately prepared me for a career in technology.
+    <img src="photo8.jpg" alt="Description of the image" class="image">
+    <p class="paragraph">I am a second year at Georgia Tech studying Computational Media, an interdisciplinary program that combines computer science and interaction design.
+        Throughout my time at Georgia Tech, I have learned how technology is able to affect the human condition. I have gained technical expertise from my computer science classes as well as creative skills from my design classes. 
+        My courses such as Object-Oriented Programming, Objects and Design, Visual Design, and Data Structures and Algorithms have adqueately prepared me for a career in technology.
         My passion for design lies where product design meets digital well-being. As a designer and front-end developer my goal is to create meaningful experiences that enhance peoples lives.
     </p>
   </div>
 
   <div class="rectangle">
     <h1>why design?</h1>
-    <p>my love for creating began in second grade when my childhood friend and i ran over to each other’s houses to make what we called “secret inventions”--rummaging through our garbage and recycling bins, we made contraptions out of scraps to fix everyday problems around our homes.
-
-        ikea was my version of disneyland. with a mouthwatering $1.00 soft serve in hand, i wandered around the never-ending aisles of furniture, storage cabinets, and containers. laying down on the bean bags, i would stare at the hanging lights in awe of how everything was so simple yet ingenious. though i didn’t know it at the time, looking back this was the root of my love for product design. and...i guess the rest is history (or a story i’d love to share with you!)</p>
+    <p>My motivation for design lies in my desire to help people have seamless and 
+      intuitive interactions with technology, making their lives more efficient and enjoyable. 
+      After completing the Bits of Good Design Bootcamp, my design values were fostered, 
+      expanded upon, and became an integral part of my approach. This program honed in on my 
+      technical skills and instilled a deep appreciation for user-centered design, empathy driven 
+      solutions, and the power of aesthetics. The variety involved in the UI/UX field intrigues me the most.
+      Visual design, UI coding, problem solving, writing, research, data analysis, it has everything. 
+      There's so much I get to learn and develop, and whenever I get bored I can try something new.
+    </p>
   </div>
 
   <div class="title">
@@ -46,11 +52,48 @@
     <div class="grid-item"><img src="photo4.jpg" alt="Image 5"></div>
     <div class="grid-item"><img src="photo5.jpg" alt="Image 6"></div>
     <div class="grid-item"><img src="photo6.jpg" alt="Image 7"></div>
-    <div class="grid-item"><img src="photo6.jpg" alt="Image 8"></div>
-    <div class="grid-item"><img src="photo9.jpg" alt="Image 9"></div>
-    <div class="grid-item"><img src="photo5.jpg" alt="Image 10"></div>
+    <div class="grid-item"><img src="photo7.jpg" alt="Image 8"></div>
+    <div class="grid-item"><img src="photo10.jpg" alt="Image 9"></div>
+    <div class="grid-item"><img src="photo9.jpg" alt="Image 10"></div>
     <!-- Add more grid items with images -->
   </div>
+
+  <footer id="main footer">
+    <div class="footer-content">
+      <div class="left-content">
+          thanks for stopping by!
+      </div>
+      <div class="right-content">
+          <a href="mailto:anichani6@gatech.edu">email</a>
+          <a href="www.linkedin.com/in/anshika-nichani-b964501a9">linkedin</a>
+      </div>
+  </div>
+  </footer>
+
+
+  <script>
+    // Event listener for scroll
+  window.addEventListener('scroll', handleScroll);
+
+document.addEventListener("DOMContentLoaded", function() {
+  window.addEventListener("scroll", function() {
+      const footer = document.getElementById("main-footer");
+      const scrollPosition = window.innerHeight + window.scrollY;
+      const documentHeight = document.body.offsetHeight;
+
+      // Adjust the threshold as needed
+      if (scrollPosition >= documentHeight - 100) {
+          footer.style.display = "block";
+          footer.style.opacity = 1;
+      } else {
+          footer.style.opacity = 0;
+          setTimeout(() => {
+              footer.style.display = "none";
+          }, 300); // Adjust the delay to match the transition duration
+      }
+  });
+});
+  </script>
 
   
 

@@ -6,13 +6,13 @@
   </head>
   <body>
 
-    <div>
-      <h1 id="an"> an. </h1>
-    </div>
+    <h1 id="an">
+      <a href="index.html" class="first-part">an</a>.
+  </h1>
     <div id="menu">
       <a class="menu-item" href="index.html">home</a>
       <a class="menu-item" href="about.html">about</a>
-      <a class="menu-item" href="Resume.pdf">resume</a>
+      <a class="menu-item" href="resume.html">resume</a>
       <a class="menu-item" href="contact.html">photography</a>
     </div>
 
@@ -133,21 +133,69 @@
     <div class="gallery3">
       <button class="swipe left">&lt;</button>
       <div class="gallery-container3">
-        <img src="col/007242490008 2.JPG" alt="Image 1">
-        <img src="col/007242490010 2.JPG" alt="Image 2"> 
-        <img src="col/007242490020 3.JPG" alt="Image 3"> 
-        <img src="col/007242490027 3.JPG" alt="Image 4"> 
-        <img src="col/007242490028 2.jpg" alt="Image 5"> 
-        <img src="col/007242490031 2.JPG" alt="Image 6"> 
-        <img src="col/007242510017 2.jpg" alt="Image 7"> 
-        <img src="col/007242510021 2.jpg" alt="Image 8"> 
-        <img src="col/007242510032 2.jpg" alt="Image 9"> 
+        <img src="col/007242490018.jpg" alt="Image 1">
+        <img src="col/007242490020.jpg" alt="Image 2"> 
+        <img src="col/007242490027.jpg" alt="Image 3"> 
+        <img src="col/007242510001.jpg" alt="Image 4"> 
+        <img src="col/007242510016.jpg" alt="Image 5"> 
+        <img src="col/007242510017.jpg" alt="Image 6"> 
+        <img src="col/007242510022.jpg" alt="Image 7"> 
+        <img src="col/007242510025.jpg" alt="Image 8"> 
         <!-- Add more images here -->
       </div>
       <button class="swipe right">&gt;</button>
     </div>
 
+
+    <div class="title4">
+      <h2>portraits</h2>
+    </div>
+
+    <div class="gallery4">
+      <button class="swoosh left">&lt;</button>
+      <div class="gallery-container4">
+        <img src="port/DSC_0617.JPG" alt="Image 1">
+        <img src="port/DSC_0623.JPG" alt="Image 2"> 
+        <img src="port/DSC_0625.JPG" alt="Image 3"> 
+        <img src="port/DSC_0627.JPG" alt="Image 4"> 
+        <img src="port/DSC_0632.jpg" alt="Image 5"> 
+        <img src="port/DSC_0633.JPG" alt="Image 6"> 
+        <img src="port/DSC_0637.JPG" alt="Image 7"> 
+        <img src="port/DSC_0639.JPG" alt="Image 8">
+        <img src="port/DSC_0653.JPG" alt="Image 9">
+        <img src="port/DSC_0661.JPG" alt="Image 10">
+        <img src="port/DSC_0662.JPG" alt="Image 11">
+        <img src="port/DSC_0663.JPG" alt="Image 12"> 
+        <!-- Add more images here -->
+      </div>
+      <button class="swoosh right">&gt;</button>
+    </div>
+
     <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    const gallery = document.querySelector('.gallery4');
+    const leftArrow = document.querySelector('.swoosh.left');
+    const rightArrow = document.querySelector('.swoosh.right');
+
+    // Scroll the gallery to the left
+    leftArrow.addEventListener('click', function() {
+        gallery.scrollTo({
+            left: gallery.scrollLeft - 200, // Adjust scrolling amount as needed
+            behavior: 'smooth' // Add smooth scrolling behavior
+        });
+    });
+
+    // Scroll the gallery to the right
+    rightArrow.addEventListener('click', function() {
+        gallery.scrollTo({
+            left: gallery.scrollLeft + 200, // Adjust scrolling amount as needed
+            behavior: 'smooth' // Add smooth scrolling behavior
+        });
+    });
+});
+</script>
+
+<script>
       document.addEventListener('DOMContentLoaded', function() {
     const gallery = document.querySelector('.gallery3');
     const leftArrow = document.querySelector('.swipe.left');
@@ -169,10 +217,39 @@
         });
     });
 });
-    // Event listener for scroll
-  window.addEventListener('scroll', handleScroll);
+</script>
 
-    </script>
+<script>
+  window.addEventListener('scroll', function() {
+      var footer = document.getElementById('main-footer');
+      var scrollPosition = window.scrollY;
+      var windowHeight = window.innerHeight;
+      var bodyHeight = document.body.offsetHeight;
+
+      // Set a threshold to define when the footer should appear
+      var threshold = 100; // Adjust this value as needed
+
+      if (scrollPosition + windowHeight >= bodyHeight - threshold) {
+        footer.classList.remove('hidden');
+      } else {
+        footer.classList.add('hidden');
+      }
+    });
+</script>
+
+<footer id="main footer">
+  <div class="footer-content">
+    <div class="left-content">
+        thanks for stopping by!
+    </div>
+    <div class="right-content">
+        <a href="mailto:anichani6@gatech.edu">email</a>
+        <a href="www.linkedin.com/in/anshika-nichani-b964501a9">linkedin</a>
+    </div>
+</div>
+</footer>
+
+
 
 
 

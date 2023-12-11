@@ -227,7 +227,7 @@ body {
 
 .swipe {
   position: absolute;
-  top: 140%;
+  top: 130%;
   transform: translateY(-50%);
   width: 100px;
   height: 100px;
@@ -274,22 +274,148 @@ body {
   border-color: #FF4545; /* Change to the color you want on hover */
 }
 
-#main-footer {
-  display: none;
-  /* Your footer styles */
-  /* Ensure it's fixed at the bottom of the page */
+
+.gallery-container4 {
+  width: 20%; /* Adjust width as needed */
+  margin-right: 0; /* Reset right margin */
+  margin-top: 5px;
+}
+
+.gallery4 {
+  width: 80%; /* Set the width of the gallery */
+  margin: 0 auto; /* Center the gallery within its container */
+  overflow-x: auto;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+.gallery4 img {
+  max-width: 100%; /* Adjust image width */
+  height: auto;
+  display: inline-block;
+  vertical-align: top; /* Align images to the top */
+  margin-top: 0; /* Reset top margin */
+  margin-right: 20px;
+}
+
+.title4 {
+  text-align: left; /* Center the title horizontally */
+  color: white;
+  font-size: 15px;
+  padding-top: 40px;
+  margin-left: 150px;
+}
+
+
+.swoosh {
+  position: absolute;
+  top: 180%;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  background: none;
+  outline: none; /* Remove the outline */
+  box-shadow: none;
+  border: none;
+}
+
+.swoosh.left::before,
+.swoosh.right::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid;
+  border-width: 0 5px 5px 0;
+  color: white;
+  width: 25px;
+  height: 25px;
+  outline: none;
+}
+
+.swoosh.left::before {
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.swoosh.right::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+.swoosh.left {
+  left: 80px;
+}
+
+.swoosh.right {
+  right: 80px;
+}
+
+.swoosh:hover::before {
+  border-color: #FF4545; /* Change to the color you want on hover */
+}
+
+
+
+
+
+
+.first-part {
+  color: white; /* Change the color of 'an' */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#an {
+  color: #FF4545; /* Change the color of '.' */
+}
+
+#an:hover .first-part {
+  color: #FF4545; /* Change 'an' color on hover */
+}
+
+
+footer {
+  background-color: #FF4545;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #FF4545;
-  padding: 20px;
-  text-align: center;
-  color: white;
-  font-weight: bold;
-  transition: opacity 0.3s ease; /* Add transition effect for smooth display */
 }
 
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FF4545;
+}
 
+.left-content {
+  text-align: left;
+  color: white; /* Text color */
+  font-weight: bold;
+  background-color: #FF4545;
+
+}
+
+.right-content a {
+  text-decoration: none;
+  color: white;
+  background-color: #FF4545;
+  padding: 20px 20px; /* Padding for links */
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  background-color: #FF4545;
+}
+
+.right-content a:hover {
+  background-color: black; /* Change background color on hover */
+}
 
 

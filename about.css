@@ -42,13 +42,14 @@
     font-family: 'Poppins', sans-serif;
     color: #841515;
     display: block;
+    margin-top: 60px;
 }
 
 .paragraph {
     text-align: justify; /* Aligns the paragraph text justified */
     width: 35%;
     padding-left: 53%;
-    margin-top: -520px;
+    margin-top: -470px;
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
@@ -65,7 +66,7 @@
 
 
 .rectangle {
-    width: 100%; /* Adjust width as needed */
+    width: 90%; /* Adjust width as needed */
     height: 300px; /* Adjust height as needed */
     background-color: #FF4545; /* Rectangle background color */
     color: white; /* Text color */
@@ -84,6 +85,7 @@
     padding: 20px 100px;
     background-color: #FF4545;
     width: 80%;
+    font-family: 'Poppins', sans-serif;
 }
 
 .rectangle p {
@@ -93,6 +95,7 @@
     padding: 20px 100px;
     background-color: #FF4545;
     width: 80%;
+    font-family: 'Poppins', sans-serif;
 
 }
 *:focus {
@@ -135,7 +138,25 @@
     color: white; /* Change the color of the title */
   }
 
-  #main-footer {
+.first-part {
+    color: white; /* Change the color of 'an' */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#an {
+    color: #FF4545; /* Change the color of '.' */
+}
+
+#an:hover .first-part {
+    color: #FF4545; /* Change 'an' color on hover */
+}
+
+#an:hover {
+    color: white; /* Change '.' color on hover */
+}
+
+#main-footer {
     display: none;
     /* Your footer styles */
     /* Ensure it's fixed at the bottom of the page */
@@ -150,6 +171,49 @@
     font-weight: bold;
     transition: opacity 0.3s ease; /* Add transition effect for smooth display */
 }
+
+footer {
+    background-color: #FF4545;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FF4545;
+  }
+  
+  .left-content {
+    text-align: left;
+    color: white; /* Text color */
+    font-weight: bold;
+    background-color: #FF4545;
+  
+  }
+  
+  .right-content a {
+    text-decoration: none;
+    color: white;
+    background-color: #FF4545;
+    padding: 20px 20px; /* Padding for links */
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    background-color: #FF4545;
+  }
+  
+  .right-content a:hover {
+    background-color: black; /* Change background color on hover */
+  }
+  
 
 
 

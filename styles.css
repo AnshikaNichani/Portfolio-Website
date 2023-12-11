@@ -367,6 +367,23 @@ footer {
     background-color: black; /* Change background color on hover */
 }
 
+.first-part {
+    color: white; /* Change the color of 'an' */
+    text-decoration: none;
+}
+
+#an {
+    color: #FF4545; /* Change the color of '.' */
+}
+
+#an:hover .first-part {
+    color: #FF4545; /* Change 'an' color on hover */
+}
+
+#an:hover {
+    color: white; /* Change '.' color on hover */
+}
+
 
 
 
